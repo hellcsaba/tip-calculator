@@ -10,46 +10,48 @@
     <title>Tip calculator app</title>
   </head>
   <body>
-    <main>
-      <img src="./images/logo.svg" />
-      <article>
-        <section>
-          <div>
-            <label>Bill</label>
-            <input type="text" />
+    <main class="splitter">
+      <header class="splitter__header">
+        <img src="./images/logo.svg" alt="Splitter Logo" class="splitter__logo" />
+      </header>
+      <article class="splitter__content">
+        <section class="splitter__input-section">
+          <div class="splitter__input-group">
+            <label class="splitter__label" for="bill">Bill</label>
+            <input type="text" id="bill" class="splitter__input splitter__input--bill" />
           </div>
-          <div>
-            <label>Select Tip %</label>
-            <div>
-              <button>5%</button>
-              <button>10%</button>
-              <button>15%</button>
-              <button>25%</button>
-              <button>50%</button>
-              <button>Custom</button>
+          <div class="splitter__input-group splitter__input-group--tip">
+            <label class="splitter__label">Select Tip %</label>
+            <div class="splitter__tip-options">
+              <button class="splitter__tip-button">5%</button>
+              <button class="splitter__tip-button">10%</button>
+              <button class="splitter__tip-button splitter__tip-button--active">15%</button>
+              <button class="splitter__tip-button">25%</button>
+              <button class="splitter__tip-button">50%</button>
+              <button class="splitter__tip-button splitter__tip-button--custom">Custom</button>
             </div>
           </div>
-          <div>
-            <label>Number of people</label>
-            <input type="text" />
+          <div class="splitter__input-group">
+            <label class="splitter__label" for="people">Number of People</label>
+            <input type="text" id="people" class="splitter__input splitter__input--people" />
           </div>
         </section>
-        <section>
-          <div>
-            <label
-              >Tip Amount
-              <p>/ person</p></label
-            >
-            <input type="text" />
+        <section class="splitter__result-section">
+          <div class="splitter__result-group">
+            <label class="splitter__result-label">
+              Tip Amount
+              <span class="splitter__result-subtext">/ person</span>
+            </label>
+            <div class="splitter__result-value">$4.27</div>
           </div>
-          <div>
-            <label
-              >Total
-              <p>/ person</p></label
-            >
-            <input type="text" />
+          <div class="splitter__result-group">
+            <label class="splitter__result-label">
+              Total
+              <span class="splitter__result-subtext">/ person</span>
+            </label>
+            <div class="splitter__result-value">$32.79</div>
           </div>
-          <button>Reset</button>
+          <button class="splitter__reset-button">Reset</button>
         </section>
       </article>
     </main>
