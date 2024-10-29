@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Primary
+$strong-cyan: hsl(172, 67%, 45%);
+
+// Neutral
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: $light-grayish-cyan;
+    color: $grayish-cyan;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splitter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__header {
+        padding-block: 2rem;
+    }
+
+    &__content {
+        background-color: $white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+
+    &__input-group {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-block: 1rem;
+    }
+
+    &__label {
+        font-size: 1rem;
+        padding-block-end: 0.5rem;
+    }
+
+    &__input {
+        outline: none;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding: 0.75rem;
+        text-align: end;
+        background-color: $very-light-grayish-cyan;
+        font-family: inherit;
+        font-size: 1rem;
+        color: $grayish-cyan;
+    }
+
+    &__input::placeholder {
+        font-family: inherit;
+        color: $light-grayish-cyan;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 1rem;
+        height: 1rem;
+        top: 55%;
+        transform: translateY(0%);
+        fill:  $light-grayish-cyan;
+    }
+
+    &__tip-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    &__tip-button {
+        border: none;
+        margin: 0;
+        padding: 0.5rem;
+        width: auto;
+        overflow: visible;
+        background-color: $very-dark-cyan;
+        border-radius: 0.375rem;
+        font: inherit;
+        font-size: 1rem;
+        color: $white;
+    }
+
+    &__tip-button:focus, &__tip-button:active {
+       background-color: $strong-cyan;
+       color: $very-dark-cyan;
+    }
+
+}

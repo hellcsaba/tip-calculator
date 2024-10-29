@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Tip calculator app</title>
@@ -18,14 +19,15 @@
         <section class="splitter__input-section">
           <div class="splitter__input-group">
             <label class="splitter__label" for="bill">Bill</label>
-            <input type="text" id="bill" class="splitter__input splitter__input--bill" />
+            <input type="number" id="bill" class="splitter__input splitter__input--bill" placeholder="0" />
+            <img src="./images/icon-dollar.svg" class="splitter__icon" />
           </div>
           <div class="splitter__input-group splitter__input-group--tip">
             <label class="splitter__label">Select Tip %</label>
             <div class="splitter__tip-options">
               <button class="splitter__tip-button">5%</button>
               <button class="splitter__tip-button">10%</button>
-              <button class="splitter__tip-button splitter__tip-button--active">15%</button>
+              <button class="splitter__tip-button">15%</button>
               <button class="splitter__tip-button">25%</button>
               <button class="splitter__tip-button">50%</button>
               <button class="splitter__tip-button splitter__tip-button--custom">Custom</button>
@@ -33,7 +35,7 @@
           </div>
           <div class="splitter__input-group">
             <label class="splitter__label" for="people">Number of People</label>
-            <input type="text" id="people" class="splitter__input splitter__input--people" />
+            <input type="number" id="people" class="splitter__input splitter__input--people" placeholder="0" />
           </div>
         </section>
         <section class="splitter__result-section">
