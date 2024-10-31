@@ -187,3 +187,32 @@ body {
         color: $very-dark-cyan-50;
     }
 }
+
+@media (min-width: 40rem) {
+    .splitter {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 64rem;
+            gap: 3rem;
+            padding: 2rem;
+        }
+
+        &__tip-options {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        &__result-section {
+            background-color: $very-dark-cyan;
+            border-radius: 0.75rem;
+            padding: 3rem 2.5rem 2.5rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5rem;
+        }
+
+        &__reset-button {
+            margin-top: auto;
+        }
+    }
+}

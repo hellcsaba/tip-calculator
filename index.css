@@ -153,4 +153,28 @@ body {
   color: hsla(183, 100%, 15%, 0.5);
 }
 
+@media (min-width: 40rem) {
+  .splitter__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 64rem;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .splitter__tip-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .splitter__result-section {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.75rem;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .splitter__reset-button {
+    margin-top: auto;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
