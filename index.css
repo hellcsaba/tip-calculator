@@ -154,6 +154,9 @@ body {
 }
 
 @media (min-width: 40rem) {
+  body {
+    align-items: center;
+  }
   .splitter__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
